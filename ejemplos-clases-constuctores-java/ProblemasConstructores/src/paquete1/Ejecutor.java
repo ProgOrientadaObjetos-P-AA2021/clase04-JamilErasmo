@@ -10,9 +10,15 @@ package paquete1;
  * @author reroes
  */
 public class Ejecutor {
+
     public static void main(String[] args) {
-        
-        /*Crear un objeto y presentar los datos*/
-        
+        String nombre = "hospital utpl";
+        String ciudad = "loja";
+        int numeroDoctores = 200;
+        int numeroEnfermeros = 250;
+        Hospital h1 = new Hospital(nombre, ciudad, numeroDoctores, numeroEnfermeros);
+        System.out.printf("Nombre: %s\nCiudad: %s\nNumero de Doctores: "
+                + "%d\ndNumero de enfermeros: %d", h1.obtenerNombre(), h1.obtenerCiudad(),
+                 h1.obtenerNumeroDoctores(), h1.obtenerNumeroEnfermeros());
     }
 }
